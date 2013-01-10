@@ -6,7 +6,8 @@
 autopublish
 insecure
 preserve-inputs
-bootstrap
 coffeescript
 less
 moment
+bootstrap
+router

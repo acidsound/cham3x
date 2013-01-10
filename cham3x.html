@@ -7,10 +7,79 @@
 
 <body>
 {{>header}}
-{{>main}}
+{{renderPage}}
 </body>
 
-<template name="main">
+<template name="lobby">
+  <div class="container">
+    <h3>
+      <img src="./images/kakaotalk_button_small.png"/> 친구랑 불꽃 배틀!
+      궁금하면 <a href="kakaolink://sendurl/?msg=%EC%9A%B0%EB%A6%AC%20%EC%82%AC%EC%9D%B4%EC%A2%8B%EA%B2%8C%20%EC%8B%B8%EB%8B%A5%EC%85%98%20%ED%95%9C%EB%B2%88%20%EC%98%AC%EB%A0%A4%EB%B6%99%EC%97%AC%EB%B3%BC%EA%B9%8C?&url=http://cham3x02.meteor.com/friend/spectrum&appid=cham3x02.meteor.com&appver=1.0&apiver=cham3x">클릭클릭!</a>
+    </h3>
+    <ul class="thumbnails">
+      <li class="span3 tile tile-double tile-orange">
+        <a href="#" class="daily">
+          <h1 class="tile-text">Daily Rank</h1>
+        </a>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/421646_321077447943233_2007982862_t.jpg"/>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc6/c18.8.95.95/s80x80/223720_154549331291166_1822005_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c0.16.75.75/544000_448909958505893_1821682129_t.jpg"/>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc6/c8.1.94.94/s80x80/228394_107490332672471_8379670_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c7.7.84.84/s80x80/310151_105792989534149_1809439833_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c24.7.83.83/s80x80/431471_315043971881256_993749342_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-orange">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c7.7.93.93/s80x80/418076_277096285704690_515016771_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-yellow">
+        <a href="#" >
+          <h1 class="tile-text">More</h1>
+        </a>
+      </li>
+      <li class="span3 tile tile-double tile-magenta">
+        <a href="#" class="now">
+          <h1 class="tile-text">Now Fight</h1>
+        </a>
+      </li>
+      <li class="span3 tile tile-magenta">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c9.9.113.113/s80x80/76977_1563289836979_4062827_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-double tile-purple">
+        <a href="#" class="invited">
+          <h1 class="tile-text">Invited</h1>
+        </a>
+      </li>
+      <li class="span3 tile tile-purple">
+        <img src="https://graph.facebook.com/100002326036049/picture"/>
+      </li>
+      <li class="span3 tile tile-double tile-lime">
+        <a href="#" class="waiting">
+          <h1 class="tile-text">Waiting</h1>
+        </a>
+      </li>
+      <li class="span3 tile tile-lime">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c7.7.84.84/s80x80/255166_192362094148968_9183_s.jpg"/>
+      </li>
+      <li class="span3 tile tile-lime">
+        <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c9.9.113.113/s80x80/561156_3436441324278_1830652275_s.jpg"/>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<template name="ring">
   {{> stageLog}}
   {{> two-way-control}}
 </template>
@@ -27,7 +96,7 @@
         </a>
 
         <!-- Be sure to leave the brand out there if you want it shown -->
-        <a class="brand" href="#">참참참-Cham3X</a>
+        <a class="brand" href="#">Battle Cham3X</a>
 
         <!-- Everything you want hidden at 940px or less, place within here -->
         <div class="nav-collapse collapse">
@@ -39,8 +108,8 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
-          <ul class="nav">
-            <li class="pull-right">
+          <ul class="nav pull-right">
+            <li>
               <a href="#">login</a>
             </li>
           </ul>

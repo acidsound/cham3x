@@ -1,6 +1,6 @@
 @media (min-width: 940px) {
  body {
-   padding-top: 60px;
+   padding-top: 80px;
  }
 }
 
@@ -27,10 +27,39 @@
   }
 }
 
+.tile {
+  img {
+    width:130px;
+    maring:0;
+  }
+
+}
+
+.message-system {
+  margin-top: 1px;
+}
+
 .critical-attack {
   color: @theme-color1;
 }
 
 .timeago {
   background-color: @theme-color4;
+}
+
+/* modify metro-bootstrap */
+.thumbnails > li.tile {
+ padding:1px;
+}
+
+@media (max-width: 767px) {
+  .thumbnails {
+    li {
+      float: none;
+      margin: 0;
+    }
+    li.tile {
+      padding: 0;
+    }
+  }
 }

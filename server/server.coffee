@@ -35,7 +35,7 @@ Meteor.startup ->
       userId:'acidsound'
       ringId:'spectrum_acidsound'
       ringSeq: ringSeq++
-      message:'훗, 너의 패턴은 다 외웠다. 그것은 강약약중강약 개나리 패턴!'
+      message:'훗, 너의 패턴은 다 파악했다. 그것은 강약약중강약 개나리 패턴!'
       status:'Defence-Success'
       created_at:Date.now()-90000000
     Rings.insert
@@ -43,7 +43,7 @@ Meteor.startup ->
       ringId:'spectrum_acidsound'
       ringSeq: ringSeq++
       message:'크윽. 막아내다니'
-      status:'system'
+      status:'Attack-Failure'
       created_at:Date.now()-22000000
     Rings.insert
       userId:'spectrum'
@@ -65,7 +65,7 @@ Meteor.startup ->
       ringSeq: ringSeq++
       message:'어금니 꽉 물어라!'
       status:'Attack-Ready'
-      created_at:Date.now()-9000000
+      created_at:Date.now()-900000
     Rings.insert
       userId:'spectrum'
       ringId:'spectrum_acidsound'
@@ -79,12 +79,12 @@ Meteor.startup ->
       ringSeq: ringSeq++
       message:'먹어라 회한의 창공을 가르는 왼쪽 싸닥션!'
       status:'Attack-Left'
-      created_at:Date.now()-900000
+      created_at:Date.now()-90000
     Rings.insert
       userId:'spectrum'
       ringId:'spectrum_acidsound'
       ringSeq: ringSeq++
-      message:'의 공격이 찰지게 들어와 체력 20이 감소했다.'
+      message:'의 공격이 <span class="critical-attack">찰지게</span> 들어와 체력 20이 감소했다.'
       status:'system'
       created_at:Date.now()-22000
     Rings.insert
@@ -93,28 +93,28 @@ Meteor.startup ->
       ringSeq: ringSeq++
       message:'크오옷. 조..좋은 싸닥션이다.'
       status:'Defence-failure'
-      created_at:Date.now()-90000
+      created_at:Date.now()-9000
     Rings.insert
       userId:'spectrum'
       ringId:'spectrum_acidsound'
       ringSeq: ringSeq++
       message:' 현재 체력 80/100'
       status:'system'
-      created_at:Date.now()
+      created_at:Date.now()-2200
     Rings.insert
       userId:'acidsound'
       ringId:'spectrum_acidsound'
       ringSeq: ringSeq++
       message:' 턴 종료'
       status:'system'
-      created_at:Date.now()
+      created_at:Date.now()-900
     Rings.insert
       userId:'spectrum'
       ringId:'spectrum_acidsound'
       ringSeq: ringSeq++
       message:' 공격 대기'
       status:'system'
-      created_at:Date.now()
+      created_at:Date.now()-300
     Rings.insert
       userId:'spectrum'
       ringId:'spectrum_acidsound'
