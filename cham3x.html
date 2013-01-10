@@ -1,5 +1,8 @@
 <head>
   <title>cham3x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 </head>
 
 <body>
@@ -85,7 +88,7 @@
 <template name="system_message">
   <li class="message-system">
     <p>
-      <span class="player">{{userId}}</span>{{message}}
+      <span class="player">{{userId}}</span>{{{message}}}
       <span class="timeago pull-right label">{{ago created_at}}</span>
     </p>
   </li>
@@ -94,7 +97,7 @@
 <template name="user_message">
   <li class="media">
     <a class="pull-left" href="#">
-      <img class="media-object" data-src="https://graph.facebook.com/607658620/picture" src="https://graph.facebook.com/607658620/picture">
+      <img class="media-object" data-src="{{userPhoto userId}}" src="{{userPhoto userId}}">
     </a>
     <div class="media-body {{side userId}}">
       <h4 class="media-heading">{{userId}}</h4>
