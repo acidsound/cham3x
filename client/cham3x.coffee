@@ -11,6 +11,8 @@ _.extend Template.stageLog,
     '#{id} my-side'
 
 _.extend Template.lobby,
+  friend: ->
+    Session.get 'friend'
   events:
     'click li>img': ->
       Meteor.Router.to '/ring/ring'

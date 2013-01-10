@@ -13,8 +13,12 @@
 <template name="lobby">
   <div class="container">
     <h3>
-      <img src="./images/kakaotalk_button_small.png"/> 친구랑 불꽃 배틀!
-      궁금하면 <a href="kakaolink://sendurl/?msg=%EC%9A%B0%EB%A6%AC%20%EC%82%AC%EC%9D%B4%EC%A2%8B%EA%B2%8C%20%EC%8B%B8%EB%8B%A5%EC%85%98%20%ED%95%9C%EB%B2%88%20%EC%98%AC%EB%A0%A4%EB%B6%99%EC%97%AC%EB%B3%BC%EA%B9%8C?&url=http://cham3x02.meteor.com/friend/spectrum&appid=cham3x02.meteor.com&appver=1.0&apiver=cham3x">클릭클릭!</a>
+      {{#if friend}}
+        어서와요. 싸닥션은 처음이시죠? {{friend}}님한테 말씀 많이 들었어요. (//ㅅ)//
+      {{else}}
+      <img src="/images/kakaotalk_button_small.png"/> 친구랑 불꽃 배틀!
+      궁금하면 <a href="kakaolink://sendurl/?msg=%5B%EC%B0%B8%EC%B0%B8%EC%B0%B8%5D%EA%B0%80%EB%B3%8D%EA%B2%8C%20%ED%95%9C%EA%B2%8C%EC%9E%84%20%EC%96%B4%EB%96%A0%EC%85%94%EC%9A%94%3F?&url=http://cham3x02.meteor.com/friend/spectrum&appid=cham3x02.meteor.com&appver=1.0&apiver=cham3x">클릭클릭!</a>
+      {{/if}}
     </h3>
     <ul class="thumbnails">
       <li class="span3 tile tile-double tile-orange">
